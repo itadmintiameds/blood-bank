@@ -101,7 +101,7 @@ const ContactUsSection = () => {
                 href="mailto:info@sudhanandgroup.com"
                 className="text-red-600 font-semibold hover:text-red-800 transition duration-300 text-xs sm:text-sm"
               >
-                info@bloodBank.com
+                info@cureplusbloodbank.com
               </Link>
             </div>
             .
