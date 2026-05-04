@@ -37,12 +37,6 @@ const teamMembers = [
     image: '/RaghuDas.png',
     bio: 'Capt. Raghu Das is a seasoned professional with extensive experience in operations management. His strategic vision and leadership skills are instrumental in ensuring the efficient functioning of CurePlus Blood Center.',
   },
-  {
-    name: 'Mrs. Rashmi N. Raj',
-    role: 'General Manager',
-    image: '/RashmiRaj.jpeg',
-    bio: 'Mrs. Rashmi N. Raj is a dynamic general manager at CurePlus Blood Center, overseeing daily operations and ensuring that our mission of saving lives is met with efficiency and compassion.',
-  },
 ]
 
 const page = () => {

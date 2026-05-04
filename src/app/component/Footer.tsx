@@ -76,7 +76,6 @@ const Footer = () => {
               />
               <div className="mt-8 text-center">
                 <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-                <p className="text-gray-400">Email: rashmi@cureplusbloodbank.com</p>
                 <p className="text-gray-400">Phone:+91 8214506445</p>
               </div>
             </div>
