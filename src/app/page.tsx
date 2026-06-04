@@ -4,7 +4,7 @@ import HeaderNavigation from './component/HeaderNavigation'
 import HowItWorks from './component/HowItWorks'
 import AboutBloodDonation from './component/AboutBloodDonation'
 import Testimonials from './component/Testimonials'
-import UpcomingEvents from './component/UpcommingEvents'
+// import UpcomingEvents from './component/UpcommingEvents'
 import CTASection from './component/CTASection'
 import Footer from './component/Footer'
 import ContactUs from './component/ContactUs'
@@ -29,7 +29,7 @@ const page = () => {
       <AboutBloodDonation />
       <VideoCarousel />
       <Testimonials />
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
       <CTASection />
       <ContactUs />
       <Footer />
