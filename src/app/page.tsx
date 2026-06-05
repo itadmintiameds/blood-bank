@@ -13,7 +13,7 @@ import VideoCarousel from './component/VideoCarousel'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Who We Are', href: '/story', current: false },
+  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
   { name: 'Blood Facts', href: '/facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
   { name: 'FAQs', href: '/faq', current: false },
