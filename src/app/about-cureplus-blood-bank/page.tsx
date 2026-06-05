@@ -11,8 +11,8 @@ import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  { name: 'Who We Are', href: '/story', current: true },
-  { name: 'Blood Facts', href: '/facts', current: false },
+  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: true },
+  { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
   { name: 'FAQs', href: '/faq', current: false },
   { name: 'Join Us', href: '/join', current: false }

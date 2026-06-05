@@ -202,10 +202,10 @@ import { toast } from 'react-toastify';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  { name: 'Who We Are', href: '/story', current: false },
+  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
   { name: 'Can I Donate?', href: '/donate', current: false },
   { name: 'Contact', href: '#', current: false },
-  { name: 'Blood Facts', href: '/facts', current: false },
+  { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
 ];
 
 const bloodGroups = ['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'];

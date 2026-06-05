@@ -11,8 +11,8 @@ type FAQ = {
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  { name: 'Who We Are', href: '/story', current: false },
-  { name: 'Blood Facts', href: '/facts', current: false },
+  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
+  { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
   { name: 'FAQs' ,href:'/faq',current :true},
   {name: 'Join Us', href: '/join', current: false}

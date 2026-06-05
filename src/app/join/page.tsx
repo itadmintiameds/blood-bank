@@ -7,9 +7,9 @@ import Footer from '../component/Footer';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  { name: 'Who We Are', href: '/story', current: false },
+  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
   { name: 'Can I Donate?', href: '/donate', current: false },
-  { name: 'Blood Facts', href: '/facts', current: false },
+  { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Join Us', href: '/join', current: true },
 ];
 
