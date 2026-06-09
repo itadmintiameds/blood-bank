@@ -278,7 +278,7 @@ const HeroSection = () => {
             className="bg-red-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
             whileHover={{ scale: 1.05 }}
           >
-           <Link href="/join">Join the Community</Link>
+           <Link href="/blood-donor-registration">Join the Community</Link>
           </motion.button>
           {/* <motion.button
             className="bg-white border border-red-600 text-red-700 px-6 py-3 rounded-lg font-semibold hover:bg-red-100 transition"

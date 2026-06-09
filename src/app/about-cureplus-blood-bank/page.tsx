@@ -15,7 +15,7 @@ const navigation = [
   { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
   { name: 'FAQs', href: '/faq', current: false },
-  { name: 'Join Us', href: '/join', current: false }
+  { name: 'Join Us', href: '/blood-donor-registration', current: false }
 ];
 
 const teamMembers = [
@@ -193,7 +193,7 @@ const page = () => {
           <p className="text-lg mb-8">
             Join us in creating a future where every patient has access to the blood they need - on time, every time.
           </p>
-          <Link href="/join"
+          <Link href="/blood-donor-registration"
             className="bg-white text-red-700 font-bold py-3 px-6 rounded-full hover:bg-red-100 transition">
             Become a Donor
           </Link>

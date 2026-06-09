@@ -551,7 +551,7 @@ import {
     { name: 'Blood Facts', href: '/blood-donation-facts', current: true },
     { name: 'Can I donate', href: '/donate', current: false },
     { name: 'FAQs' ,href:'/faq',current :false},
-    {name: 'Join Us', href: '/join', current: false}
+    {name: 'Join Us', href: '/blood-donor-registration', current: false}
   ];
   
   const factsSections = [

@@ -15,7 +15,7 @@ const navigation = [
   { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Can I donate', href: '/donate', current: false },
   { name: 'FAQs' ,href:'/faq',current :true},
-  {name: 'Join Us', href: '/join', current: false}
+  {name: 'Join Us', href: '/blood-donor-registration', current: false}
 ];
 
 const faqs: FAQ[] = [

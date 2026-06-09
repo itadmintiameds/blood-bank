@@ -290,7 +290,7 @@ const navigation = [
   { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Can I donate', href: '/donate', current: true },
   { name: 'FAQs' ,href:'/faq',current :false},
-  {name: 'Join Us', href: '/join', current: false}
+  {name: 'Join Us', href: '/blood-donor-registration', current: false}
 
 ];
 
