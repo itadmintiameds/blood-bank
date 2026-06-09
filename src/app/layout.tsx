@@ -36,46 +36,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    name: "CurePlus Blood Bank",
-    url: "https://www.cureplusbloodbank.com",
-    logo: "https://www.cureplusbloodbank.com/logo.png",
-    description:
-      "CurePlus Blood Bank provides safe blood donation services, donor registration, blood donation camps, and blood support for patients in Mysore.",
-    telephone: "+91-8214506445",
-    email: "info@cureplusbloodbank.com",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "No 59, Devanooru, Rajeev Nagar, 2nd Stage, Udayagiri",
-      addressLocality: "Mysore",
-      addressRegion: "Karnataka",
-      postalCode: "570007",
-      addressCountry: "IN",
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Mysore",
-    },
-    sameAs: [
-      "https://www.facebook.com/",
-      "https://www.instagram.com/",
-    ],
-  };
-
   return (
     <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
-      </head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
