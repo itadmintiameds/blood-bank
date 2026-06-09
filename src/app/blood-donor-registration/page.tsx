@@ -397,7 +397,7 @@ const JoinPage = () => {
 
     <div className="text-gray-700 leading-relaxed space-y-4">
       <p>
-        If you are searching for "Donate Blood Near Me", CurePlus Blood Centre welcomes healthy and eligible donors to join our lifesaving mission.
+        If you are searching for &quot;Donate Blood Near Me&quot;, CurePlus Blood Centre welcomes healthy and eligible donors to join our lifesaving mission.
       </p>
 
       <p>
@@ -415,7 +415,7 @@ const JoinPage = () => {
 <section className="max-w-5xl mx-auto mb-16">
   <div className="bg-red-700 text-white rounded-xl p-10 text-center">
     <h2 className="text-3xl font-bold mb-6">
-      Join Our Mission to Save Lives
+      Join Our Mission to Save the Lives
     </h2>
 
     <div className="max-w-4xl mx-auto space-y-4 text-red-50 leading-relaxed">
