@@ -279,46 +279,131 @@
 
 
 
-import React from 'react';
-import { FaUserCheck, FaUserTimes, FaHeartbeat, FaTint, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
-import HeaderNavigation from '../component/HeaderNavigation';
-import Footer from '../component/Footer';
+import type { Metadata } from "next";
+import React from "react";
+import {
+  FaUserCheck,
+  FaUserTimes,
+  FaHeartbeat,
+  FaTint,
+  FaCheckCircle,
+  FaExclamationTriangle,
+} from "react-icons/fa";
+
+import HeaderNavigation from "../component/HeaderNavigation";
+import Footer from "../component/Footer";
+
+export const metadata: Metadata = {
+  title: "Blood Donation in Mysore | CurePlus Blood Centre",
+  description:
+    "Donate blood at CurePlus Blood Centre Mysore. Check eligibility, register as a donor, and help save lives through safe blood donation.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical:
+      "https://www.cureplusbloodbank.com/blood-donation-mysore",
+  },
+  openGraph: {
+    title: "Blood Donation in Mysore | CurePlus Blood Centre",
+    description:
+      "Donate blood at CurePlus Blood Centre Mysore and make a life-saving difference today.",
+    url: "https://www.cureplusbloodbank.com/blood-donation-mysore",
+    type: "website",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who can donate blood?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Healthy individuals aged 18 to 65 years who meet the eligibility criteria can donate blood.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How often can I donate blood?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most healthy donors can donate whole blood every 3 to 4 months.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is blood donation safe?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Blood donation is safe and performed using sterile, single-use equipment under medical supervision.",
+      },
+    },
+  ],
+};
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
-  { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
-  { name: 'Can I donate', href: '/donate', current: true },
-  { name: 'FAQs' ,href:'/faq',current :false},
-  {name: 'Join Us', href: '/blood-donor-registration', current: false}
-
+  { name: "Home", href: "/", current: false },
+  { name: "Who We Are", href: "/about-cureplus-blood-bank", current: false },
+  { name: "Blood Facts", href: "/blood-donation-facts", current: false },
+  { name: "Can I donate", href: "/donate", current: true },
+  { name: "FAQs", href: "/faq", current: false },
+  {
+    name: "Join Us",
+    href: "/blood-donor-registration",
+    current: false,
+  },
 ];
-
-
 
 const EligibilitySection = () => (
   <section className="max-w-5xl mx-auto px-4 py-8">
-    <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600">
-      <FaHeartbeat className="text-red-500" /> Eligibility Criteria for Blood Donation
+    <h1 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600">
+      <FaHeartbeat className="text-red-500" />
+      Blood Donation in Mysore – Save Lives Today
+    </h1>
+
+    <p className="text-gray-700 mb-6">
+      Looking for blood donation in Mysore? CurePlus Blood Centre Mysore
+      welcomes eligible donors to contribute towards saving lives. Whether you
+      want to donate blood in Mysore, complete blood donor registration in
+      Mysore, or learn more about blood donation eligibility, our team ensures a
+      safe and comfortable donation experience.
+    </p>
+
+    <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-red-600">
+      <FaHeartbeat className="text-red-500" />
+      Eligibility Criteria for Blood Donation
     </h2>
-    <p className="text-gray-700 mb-4">To ensure the safety of both the donor and recipient, blood donation is subject to certain eligibility criteria. You can donate blood if you meet the following requirements:</p>
+
+    <p className="text-gray-700 mb-4">
+      To ensure the safety of both the donor and recipient, blood donation is
+      subject to certain eligibility criteria. You can donate blood if you meet
+      the following requirements:
+    </p>
 
     <div className="grid md:grid-cols-2 gap-6 mb-10">
       <div>
         <h3 className="text-xl font-semibold mb-2 flex items-center gap-2 text-green-700">
           <FaUserCheck /> Who Can Donate?
         </h3>
+
         <ul className="list-disc ml-6 text-gray-800 space-y-2">
           <li>Age: 18–65 years (some regions allow 17-year-olds with consent).</li>
           <li>Weight: At least 50 kg (110 lbs).</li>
           <li>Haemoglobin: Min. 12.5 g/dL (women), 13 g/dL (men).</li>
           <li>Good general health and no active illness.</li>
-          <li>Donation frequency:
+
+          <li>
+            Donation frequency:
             <ul className="ml-4 list-disc">
               <li>Whole blood: Every 3 months (men), 4 months (women).</li>
               <li>Platelets: Every 7 days, up to 24 times/year.</li>
             </ul>
           </li>
+
           <li>Healthy blood pressure (90/60 to 140/90 mmHg).</li>
           <li>No major surgeries in last 6 months.</li>
           <li>6+ months after childbirth (for women).</li>
@@ -329,74 +414,151 @@ const EligibilitySection = () => (
         <h3 className="text-xl font-semibold mb-2 flex items-center gap-2 text-red-700">
           <FaUserTimes /> Who Cannot Donate?
         </h3>
+
         <ul className="list-disc ml-6 text-gray-800 space-y-2">
           <li>Recent colds, flu, or fever (wait 2 weeks).</li>
           <li>Chronic illnesses like diabetes, heart or kidney disorders.</li>
-          <li>Bloodborne infections (HIV, Hep B/C, STIs).</li>
+          <li>Bloodborne infections (HIV, Hepatitis B/C, STIs).</li>
           <li>Recent tattoos or piercings (6–12 months).</li>
           <li>Medications like antibiotics, blood thinners.</li>
           <li>Alcohol/drug use in last 24 hours.</li>
-          <li>Recent travel to malaria-endemic areas (wait 3 months).</li>
+          <li>
+            Recent travel to malaria-endemic areas (wait 3 months).
+          </li>
         </ul>
       </div>
     </div>
-    
+
     <div className="grid md:grid-cols-2 gap-6 mb-10">
-    <div className="mb-10">
-      <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-blue-700">
-        <FaCheckCircle /> Do’s (Before & After Donation)
-      </h3>
-      <ul className="list-disc ml-6 text-gray-800 space-y-2">
-        <li>Eat a healthy meal beforehand.</li>
-        <li>Stay well-hydrated before and after donation.</li>
-        <li>Get enough rest before donating.</li>
-        <li>Carry an official ID to the donation site.</li>
-        <li>Wear loose, comfortable clothing.</li>
-        <li>Rest for 10–15 minutes post-donation.</li>
-        <li>Eat iron-rich foods (spinach, beans, meat).</li>
-        <li>Report any side effects immediately.</li>
-      </ul>
+      <div>
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-blue-700">
+          <FaCheckCircle /> Do’s (Before & After Donation)
+        </h2>
+
+        <ul className="list-disc ml-6 text-gray-800 space-y-2">
+          <li>Eat a healthy meal beforehand.</li>
+          <li>Stay well-hydrated before and after donation.</li>
+          <li>Get enough rest before donating.</li>
+          <li>Carry an official ID to the donation site.</li>
+          <li>Wear loose, comfortable clothing.</li>
+          <li>Rest for 10–15 minutes post-donation.</li>
+          <li>Eat iron-rich foods (spinach, beans, meat).</li>
+          <li>Report any side effects immediately.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-yellow-600">
+          <FaExclamationTriangle /> Don’ts (Before & After Donation)
+        </h2>
+
+        <ul className="list-disc ml-6 text-gray-800 space-y-2">
+          <li>No smoking/alcohol 24 hrs before & after.</li>
+          <li>Don’t donate on an empty stomach.</li>
+          <li>Avoid intense physical activity post-donation.</li>
+          <li>Don’t leave immediately after donating—rest!</li>
+          <li>
+            Don’t donate if feeling unwell or taking certain meds.
+          </li>
+          <li>
+            Avoid aspirin/blood thinners 48 hrs before platelet donation.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div className="mb-10">
-      <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-yellow-600">
-        <FaExclamationTriangle /> Don’ts (Before & After Donation)
-      </h3>
-      <ul className="list-disc ml-6 text-gray-800 space-y-2">
-        <li>No smoking/alcohol 24 hrs before & after.</li>
-        <li>Don’t donate on an empty stomach.</li>
-        <li>Avoid intense physical activity post-donation.</li>
-        <li>Don’t leave immediately after donating—rest!</li>
-        <li>Don’t donate if feeling unwell or taking certain meds.</li>
-        <li>Avoid aspirin/blood thinners 48 hrs before platelet donation.</li>
-      </ul>
-    </div>
-    </div>
-
-    <div  className='mb-10'>
-      <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600 ">
+      <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-red-600">
         <FaTint /> What Happens to Donated Blood?
       </h2>
+
       <ol className="list-decimal ml-6 text-gray-800 space-y-3">
-        <li><strong>Collection & Transportation:</strong> Blood is labeled, sampled, and sent to labs.</li>
-        <li><strong>Component Separation:</strong> Into RBCs, Platelets, and Plasma.</li>
-        <li><strong>Screening:</strong> Tests for HIV, Hepatitis B/C, Syphilis, Malaria, etc.</li>
-        <li><strong>Safety Check:</strong> Blood is not used unless fully tested and approved.</li>
-        <li><strong>Storage:</strong> Blood is stored in fridges/freezers after labeling.</li>
-        <li><strong>Safe Transport:</strong> Delivered in temperature-controlled units.</li>
-        <li><strong>Usage:</strong> Blood reaches patients within ~10 days.</li>
+        <li>
+          <strong>Collection & Transportation:</strong> Blood is labeled,
+          sampled, and sent to labs.
+        </li>
+        <li>
+          <strong>Component Separation:</strong> Into RBCs, Platelets, and
+          Plasma.
+        </li>
+        <li>
+          <strong>Screening:</strong> Tests for HIV, Hepatitis B/C, Syphilis,
+          Malaria, etc.
+        </li>
+        <li>
+          <strong>Safety Check:</strong> Blood is not used unless fully tested
+          and approved.
+        </li>
+        <li>
+          <strong>Storage:</strong> Blood is stored in fridges/freezers after
+          labeling.
+        </li>
+        <li>
+          <strong>Safe Transport:</strong> Delivered in temperature-controlled
+          units.
+        </li>
+        <li>
+          <strong>Usage:</strong> Blood reaches patients within ~10 days.
+        </li>
       </ol>
     </div>
+
+    <section className="mt-12">
+      <h2 className="text-3xl font-bold mb-6">
+        Frequently Asked Questions
+      </h2>
+
+      <div className="space-y-6">
+        <div>
+          <h3 className="font-semibold text-lg">
+            Who can donate blood?
+          </h3>
+          <p>
+            Healthy individuals aged 18 to 65 years who meet the
+            eligibility criteria can donate blood.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-semibold text-lg">
+            How often can I donate blood?
+          </h3>
+          <p>
+            Most healthy donors can donate whole blood every 3 to 4
+            months.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="font-semibold text-lg">
+            Is blood donation safe?
+          </h3>
+          <p>
+            Yes. Blood donation is safe and performed using sterile,
+            single-use equipment under medical supervision.
+          </p>
+        </div>
+      </div>
+    </section>
   </section>
 );
 
 const BloodEligibilityPage = () => {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
       <HeaderNavigation navigation={navigation} />
+
       <main className="bg-gray-50 py-10">
         <EligibilitySection />
       </main>
+
       <Footer />
     </>
   );
