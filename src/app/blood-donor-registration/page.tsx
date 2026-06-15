@@ -9,7 +9,7 @@ import Script from "next/script";
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
-  { name: 'Can I Donate?', href: '/donate', current: false },
+  { name: 'Can I Donate?', href: '/blood-donation-mysore', current: false },
   { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
   { name: 'Join Us', href: '/blood-donor-registration', current: true },
 ];

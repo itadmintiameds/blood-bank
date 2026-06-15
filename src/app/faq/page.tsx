@@ -13,7 +13,7 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Who We Are', href: '/about-cureplus-blood-bank', current: false },
   { name: 'Blood Facts', href: '/blood-donation-facts', current: false },
-  { name: 'Can I donate', href: '/donate', current: false },
+  { name: 'Can I donate', href: '/blood-donation-mysore', current: false },
   { name: 'FAQs' ,href:'/faq',current :true},
   {name: 'Join Us', href: '/blood-donor-registration', current: false}
 ];
