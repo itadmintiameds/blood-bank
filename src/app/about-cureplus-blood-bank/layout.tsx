@@ -40,11 +40,14 @@ export default function StoryLayout({
       "description":
         "CurePlus Blood Bank is dedicated to providing safe blood donation services, promoting voluntary blood donation, and supporting patients in need.",
       "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mysore",
-        "addressRegion": "Karnataka",
-        "addressCountry": "IN"
-      },
+  "@type": "PostalAddress",
+  "streetAddress": "Dakshina Murthy Towers 59, Ground Floor, Devanooru, Rajeev Nagar, 2nd Stage, Udayagiri",
+  "addressLocality": "Mysuru",
+  "addressRegion": "Karnataka",
+  "postalCode": "570019",
+  "addressCountry": "IN"
+}
+,
       "areaServed": {
         "@type": "City",
         "name": "Mysore"

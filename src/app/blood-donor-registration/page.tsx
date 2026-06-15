@@ -525,11 +525,14 @@ const JoinPage = () => {
           "name": "Mysore"
         },
         "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Mysore",
-          "addressRegion": "Karnataka",
-          "addressCountry": "IN"
-        },
+  "@type": "PostalAddress",
+  "streetAddress": "Dakshina Murthy Towers 59, Ground Floor, Devanooru, Rajeev Nagar, 2nd Stage, Udayagiri",
+  "addressLocality": "Mysuru",
+  "addressRegion": "Karnataka",
+  "postalCode": "570019",
+  "addressCountry": "IN"
+}
+,
         "telephone": "+91-08214506445"
       }
     ]),
